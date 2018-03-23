@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Finding the largest number</title>
+</head>
+<body>
+<h1>Comparng three to find the largest</h1>
+<p>Please enter your three numbers you would like us to compare for you today.</p>
+
+<button onclick="myFunction()">click</button>
+
+<p id="calculate"></p>
+
+<script>
+function myFunction() {
+
+    var firstNumber = 0;
+    var secondNumber = 0;
+    var thirdNumber = 0;
+
+
+   firstNumber = prompt("Please enter your first number",0);
+   secondNumber =prompt("please enter your second number",0);
+   thirdNumber = prompt("please enter your third number",0);
+
+      if (firstNumber >secondNumber) {
+        if(firstNumber> thirdNumber){
+            document.getElementById("calculate").innerHTML =
+              "Hello user your first number is the largest";
+        }
+
+      }
+      else if(secondNumber > thirdNumber){
+          document.getElementById("calculate").innerHTML =
+          "Hello user your second number is largest";
+      }
+      else{
+      document.getElementById("calculate").innerHTML =
+        "Hello user your third number is largest";
+      }
+
+}
+</script>
+
+</body>
+</html>
