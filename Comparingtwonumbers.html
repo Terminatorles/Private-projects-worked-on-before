@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comparing Numbers to 75</title>
+</head>
+<body>
+<h1>Comparing your numbers to the number 75</h1>
+<p>Please enter your two numbers you would like us to compare for you today.</p>
+
+<button onclick="myFunction()">click</button>
+
+<p id="calculate"></p>
+
+<script>
+function myFunction() {
+
+    var firstNumber = 0;
+    var secondNumber = 0;
+    var sumOfBothNumbers = 0;
+
+
+   firstNumber = prompt("Please enter your first number",0);
+   secondNumber =prompt("please enter your second number",0);
+
+    sumOfBothNumbers = firstNumber + secondNumber;
+    if (firstNumber == 75) {
+        document.getElementById("calculate").innerHTML =
+        "Hello user your first number is equal to 75";
+      }
+      else if(secondNumber ==75){
+      document.getElementById("calculate").innerHTML =
+        "Hello user your second number is equal to 75";
+      }
+      else if( sumOfBothNumbers==75){
+      document.getElementById("calculate").innerHTML =
+        "Hello user the sum of both the numbers you entered are equal to 75";
+      }
+      else{
+      document.getElementById("calculate").innerHTML =
+        "Hello user unfortunately both your numbers and the sum of your numbers do not add up to 75";
+         }
+}
+</script>
+
+</body>
+</html>
