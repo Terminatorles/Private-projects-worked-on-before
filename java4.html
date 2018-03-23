@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Converting a number to Time</title>
+</head>
+<body>
+<h1>Converting a number to Time</h1>
+<p>Please enter your a number you would like us to convert into time</p>
+
+<button onclick="myFunction();">click</button>
+
+<p id="calculate"></p>
+
+<script>
+   function myFunction(){
+
+    var hours =0;
+    var minutes =0;
+    var myNumber =0;
+    var display ="";
+
+  myNumber = prompt("Please enter your number",0);
+  var hours = myNumber/60;
+  var minutes = myNumber % 60;
+
+  var display =  "Your answer is " + Math.floor(hours) + " : " + minutes + ".";
+  console.log(display);
+
+  }
+
+</script>
+</body>
+</html>
